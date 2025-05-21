@@ -1,15 +1,7 @@
 {
-  "name": "Robot Framework DevContainer",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
-
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "18"
-    }
-  },
-
+  "name": "Robot Framework + VNC",
+  "image": "gitpod/workspace-full-vnc",
   "postCreateCommand": "bash .devcontainer/setup.sh",
-
   "customizations": {
     "vscode": {
       "extensions": [
@@ -19,8 +11,6 @@
       ]
     }
   },
-
   "forwardPorts": [6080],
-
-  "remoteUser": "vscode"
+  "remoteUser": "gitpod"
 }
