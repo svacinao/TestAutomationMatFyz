@@ -1,0 +1,16 @@
+{
+  "name": "Robot Framework Dev",
+  "image": "gitpod/workspace-full-vnc",
+  "postCreateCommand": "python -m pip install --upgrade pip && pip install robotframework robotframework-browser && rfbrowser init",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "d-biehl.robotcode",
+        "PKief.material-icon-theme",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "forwardPorts": [6080]
+}
