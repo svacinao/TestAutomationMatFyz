@@ -1,20 +1,16 @@
 {
-  "name": "Robot Framework GUI",
-  "image": "consol/ubuntu-xfce-vnc:latest",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "lts"
-    }
-  },
+  "name": "Robot Framework + VNC",
+  "image": "gitpod/workspace-full-vnc",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "d-biehl.robotcode"
+        "d-biehl.robotcode",
+        "PKief.material-icon-theme"
       ]
     }
   },
-  "postCreateCommand": "bash .devcontainer/setup.sh",
   "forwardPorts": [6080],
-  "remoteUser": "root"
+  "remoteUser": "gitpod"
 }
